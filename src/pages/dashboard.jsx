@@ -6,6 +6,7 @@ import { PostForm } from "src/components/PostForm"
 import { useBlog } from "src/context/Blog"
 import { useHistory } from 'react-router-dom'
 import React, { Component } from "react";
+import { PROJECT_ID, PROJECT_SECRET, INFURA_DEDEICATED_GATEWAY } from "src/components/variables"
 
 import { create as ipfsHttpClient } from "ipfs-http-client";
 
@@ -53,9 +54,11 @@ export const Dashboard = () => {
   
   
 
-  const projectId = "2Gi3qHZFvQv4ggUOzvWVdaDdHRg";
-  const projectSecret = "993b4a672f36325ccaa0bf17fa1c2e23";
+  const projectId = PROJECT_ID;
+  const projectSecret = PROJECT_SECRET;
   const authorization = "Basic " + btoa(projectId + ":" + projectSecret);
+
+  
 
   const ipfs = ipfsHttpClient({
     url: "https://ipfs.infura.io:5001/api/v0",
@@ -80,7 +83,7 @@ export const Dashboard = () => {
     setPostImageHash(result.path)
 
     
-    document.getElementById("postImageSrc").src = "https://vuqle.infura-ipfs.io/ipfs/" + result.path
+    document.getElementById("postImageSrc").src = INFURA_DEDEICATED_GATEWAY + result.path
 
   };
 
@@ -200,7 +203,7 @@ export const Dashboard = () => {
                       <div
                         className="post__card__image-2"
                         style={{
-                          backgroundImage: `url("https://vuqle.infura-ipfs.io/ipfs/${item.account.imagehash}")`,
+                          backgroundImage: `url("${INFURA_DEDEICATED_GATEWAY}${item.account.imagehash}")`,
                         }}
                       ></div>
                       <div>

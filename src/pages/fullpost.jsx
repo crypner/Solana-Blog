@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getPostById } from "src/context/functions/getPostById";
 import idl from "src/idl.json";
+import { INFURA_DEDEICATED_GATEWAY } from "src/components/variables"
 
 const PROGRAM_KEY = new PublicKey(idl.metadata.address);
 
@@ -60,7 +61,7 @@ export const FullPost = () => {
                   <p style={{fontSize: "x-large", fontWeight: "700", marginBottom: "10px"}}>{post?.title}</p>
                   <p style={{fontSize: "large", fontWeight: "400", marginBottom: "20px"}}>{post?.date}</p> 
                 </div> 
-                <img src={`https://vuqle.infura-ipfs.io/ipfs/${post?.imagehash}`} class="img-fluid" />
+                <img src={`${INFURA_DEDEICATED_GATEWAY}${post?.imagehash}`} class="img-fluid" />
                 <div className="p-2">
                     <p className="text-justify">{post?.content}</p>
                 </div>
