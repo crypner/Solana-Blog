@@ -29,6 +29,7 @@ export const PostForm = (props) => {
         type="text"
         placeholder="Post Image Hash"
         className="bg-white rounded-3xl h-10 px-4 black"
+        hidden
       />
       <input
         value={postTitle}

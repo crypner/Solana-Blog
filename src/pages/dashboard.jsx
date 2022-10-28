@@ -6,7 +6,7 @@ import { PostForm } from "src/components/PostForm"
 import { useBlog } from "src/context/Blog"
 import { useHistory } from 'react-router-dom'
 import React, { Component } from "react";
-import { PROJECT_ID, PROJECT_SECRET, INFURA_DEDEICATED_GATEWAY } from "src/components/variables"
+import { PROJECT_ID, PROJECT_SECRET, INFURA_DEDEICATED_GATEWAY } from "src/components/variables";
 
 import { create as ipfsHttpClient } from "ipfs-http-client";
 

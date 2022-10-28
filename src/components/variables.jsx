@@ -14,3 +14,5 @@ Under Dedicated Gateways, click on enable and you will generate a dedicated Gate
 export const PROJECT_ID = '<YOUR-PROJECT-ID>'
 export const PROJECT_SECRET = '<YOUR-API-SECRET-KEY>'
 export const INFURA_DEDEICATED_GATEWAY='<YOUR-DEDICATED-GATEWAY-SUBOMAIN>'
+
+

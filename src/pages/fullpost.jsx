@@ -52,7 +52,7 @@ export const FullPost = () => {
 			" style={{ width: "20%", margin: "60px auto 0"}}>Back</a>
 
     
-    <article className="background-color" style={{color: "#ffffff"}}>
+<article className="background-color" style={{color: "#ffffff", maxWidth: "60%", margin: "20px auto 0", overflow: "auto"}}>
       <div className="container mt-5 mb-5">
     <div className="row d-flex align-items-center justify-content-center">
         <div className="col-md-6">
