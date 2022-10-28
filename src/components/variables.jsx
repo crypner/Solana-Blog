@@ -10,7 +10,6 @@ Under Dedicated Gateways, click on enable and you will generate a dedicated Gate
 
 */
 
-
-export const PROJECT_ID = '<YOUR-PROJECT-ID>'
-export const PROJECT_SECRET = '<YOUR-API-SECRET-KEY>'
-export const INFURA_DEDEICATED_GATEWAY='<YOUR-DEDICATED-GATEWAY-SUBOMAIN>'
+export const PROJECT_ID = '2Gi3qHZFvQv4ggUOzvWVdaDdHRg'
+export const PROJECT_SECRET = '993b4a672f36325ccaa0bf17fa1c2e23'
+export const INFURA_DEDEICATED_GATEWAY='https://vuqle.infura-ipfs.io/ipfs/'
