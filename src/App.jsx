@@ -7,7 +7,7 @@ import "./App.css"
 
 
 export const App = () => {
-  const endpoint = "https://morning-damp-season.solana-devnet.discover.quiknode.pro/d42da488e2f932993ae4930f71d7dc20ef3a2cdf/"
+  const endpoint = process.env.REACT_APP_QUICKNODE_ENDPOINT
   const wallets = useMemo(
     ()=> [
       new PhantomWalletAdapter(),
